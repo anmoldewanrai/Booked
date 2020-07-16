@@ -1,0 +1,31 @@
+{
+	"manifest_version": 2,
+	"name": "BooKed",
+	"description": "Easily Access Your Bookmarks",
+	"version": "1.0.0",
+	"icons": {
+		"16": "images/icon.png",
+		"128": "images/icon_128.png"
+	},
+
+	"permissions": [ "storage", "activeTab", "bookmarks" ],
+
+	"browser_action": {
+		"default_icon": "images/icon.png",
+		"default_popup": "popup.html"
+	},
+
+	"background": {
+		"scripts": [ "background.js" ],
+		"persistent": false
+	},
+
+	"commands": {
+		"_execute_browser_action": {
+			"suggested_key": {
+				"default": "Ctrl+Q",
+				"mac": "MacCtrl+Q"
+			}
+		}
+	}
+}

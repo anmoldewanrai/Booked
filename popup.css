@@ -1,0 +1,278 @@
+:root {
+	--main-background-color: #1d1e22;
+	--title-color: #ffffff;
+	--hover-color: #3a3b3c;
+}
+
+html,
+body {
+	margin: 0;
+	background: var(--main-background-color);
+	color: var(--title-color);
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #3a3b3c;
+	/* border-radius: 5px; */
+}
+
+.container {
+	width: 380px;
+	user-select: none;
+	margin-top: 20px;
+	margin-left: 6px;
+	text-align: right;
+}
+
+#heading {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+#top-img {
+	align-self: center;
+	border-radius: 5px;
+}
+
+#root-folder {
+	width: 300px;
+	display: flex;
+	flex-flow: wrap;
+	list-style-type: none;
+}
+
+#root-folder li:nth-child(2) > img,
+li:nth-child(3) > img {
+	display: none;
+}
+
+#root-folder > li {
+	transition-duration: 0.1s;
+}
+
+#root-folder > li:hover {
+	transform: scale(1.04);
+	background-color: var(--title-color);
+	color: var(--hover-color);
+}
+
+#root-folder > li:hover > img {
+	content: url("images/canceldark.svg");
+}
+
+#list > div {
+	transition-duration: 0.1s;
+}
+
+#list > div > img {
+	visibility: hidden;
+}
+
+#list > div:hover {
+	transform: scale(1.04);
+}
+
+#list > div:hover > img {
+	visibility: visible;
+}
+
+.bookmark-folder {
+	background-color: var(--hover-color);
+	margin: 5px;
+	padding: 5px;
+	border-radius: 3px;
+	font-size: 13px;
+}
+
+.bookmark-folder:hover {
+	cursor: pointer;
+}
+
+.icon {
+	position: relative;
+}
+
+.center {
+	display: flex;
+	width: 50%;
+	margin: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#newBtn {
+	position: relative;
+	bottom: 8px;
+	transition-duration: 0.1s;
+}
+
+#newBtn:hover {
+	transform: scale(1.04);
+	background-color: var(--title-color);
+	color: var(--hover-color);
+}
+
+input {
+	height: 20px;
+	font-style: normal;
+	font-size: 14px;
+}
+
+#search {
+	border: none;
+}
+#search:focus {
+	outline: none;
+}
+
+#recentBtn {
+	background-color: var(--hover-color);
+	margin: 5px;
+	padding: 5px;
+	border-radius: 3px;
+	font-size: 13px;
+	cursor: pointer;
+}
+
+.active {
+	background-color: var(--title-color);
+	color: var(--hover-color);
+}
+
+#bookmark-folder-name {
+	margin-top: 20px;
+	user-select: none;
+	font-size: 20px;
+	text-align: center;
+	color: var(--title-color);
+}
+
+.bars {
+	display: inline-block;
+	width: 8%;
+	height: 1.5px;
+	background-color: #516976;
+	margin-bottom: 5px;
+}
+
+#list {
+	justify-content: center;
+	margin-top: 40px;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+a {
+	text-decoration: none;
+	color: var(--title-color);
+}
+
+.item {
+	width: 92px;
+	margin: 5px;
+	padding: 10px;
+	border: 1px solid white;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.item:hover {
+	cursor: pointer;
+	background-color: var(--hover-color);
+	box-shadow: 0 2.4px 1.6px rgba(0, 0, 0, 0.14), 0 6.5px 4.4px rgba(0, 0, 0, 0.091),
+		0 15.7px 10.6px rgba(0, 0, 0, 0.07), 0 52px 35px rgba(0, 0, 0, 0.049);
+}
+
+.item > .delete {
+	position: relative;
+	left: 53px;
+	bottom: 11px;
+}
+
+.item > a > img {
+	position: relative;
+	right: 8px;
+	border-radius: 50%;
+}
+
+.input-icons {
+	position: relative;
+	height: 16px;
+	bottom: 7px;
+	color: var(--title-color);
+	transition-duration: 0.1s;
+}
+
+.input-icons:hover {
+	transform: scale(1.04);
+}
+
+.title {
+	text-align: center;
+	color: var(--title-color);
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+#footer {
+	text-align: center;
+	height: 30px;
+}
+
+#footer h3 {
+	cursor: pointer;
+}
+
+/* Right Click Menu */
+#right-click-menu {
+	position: fixed;
+	z-index: 10000;
+	width: 100px;
+	background: #1b1a1a;
+	transform: scale(0);
+	transform-origin: top left;
+}
+#right-click-menu.active {
+	transform: scale(1);
+	transition: transform 300ms ease-in-out;
+}
+#right-click-menu .option {
+	padding: 6px 8px;
+	font-size: 15px;
+	color: #eee;
+}
+#right-click-menu .option:hover {
+	cursor: pointer;
+	background: #555;
+}
+#right-click-menu .option i {
+	display: inline-block;
+	margin-right: 5px;
+}
+#right-click-menu hr {
+	margin: 2px 0px;
+	border-color: #555;
+}
+
+/* Edit and New Form CSS */
+#new-form {
+	position: relative;
+	z-index: 10000;
+	transform: scale(0);
+	transform-origin: top left;
+}
+#new-form.activated {
+	transform: scale(0.9);
+	transition: transform 300ms ease-in-out;
+}
+#new-folder-name:focus {
+	outline: none;
+}
