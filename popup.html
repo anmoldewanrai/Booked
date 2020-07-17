@@ -4,20 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GoTo</title>
-    <a
-      href="https://www.flaticon.com/authors/pixel-perfect"
-      title="Pixel perfect"></a>
-    <a href="https://www.flaticon.com/" title="Flaticon"></a>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="popup.css" />
   </head>
   <body>
     <div class="container">
       <span id="heading">
         <img src="./images/top-icon.png" id="top-img">
-        <!-- <button style="display: none;" id="open-bookmark-manager"> -->
         <h1 style="margin-left: 4px;">ooKed</h1>
       </span>
       <div class="search-bar">
@@ -28,9 +20,7 @@
             id="search"
             required
             />
-            <p class="bookmark-folder" id="newBtn">New</p>
-            
-            <!-- <button id="delete-bookmark-btn">Delete</button> -->
+          <p class="bookmark-folder" id="newBtn">New</p>
         </div>
         <div class="bookmark-folders">
           <ul id="root-folder">
@@ -52,24 +42,13 @@
         <h3 id="showMore">Show More</h3>
       </div>
     </div>
-    
-    <!-- Right Click Menu
-    <div id="right-click-menu">
-      <div class="option" id="deleteBtn">
-        <i class="fa fa-trash-o"></i> Delete
-      </div>
-      <hr>
-      <div class="option" id="editBtn">
-        <i class="fa fa-edit"></i> Rename
-      </div>
-    </div> -->
+
     <!-- Custom JS -->
     <script src="popup.js"></script>
     <script src="./operations/search.js"></script>
     <script src="./operations/create.js"></script>
     <script src="./operations/read.js"></script>
-    <script src="./operations/update.js"></script>
     <script src="./operations/delete.js"></script>
-    
+
   </body>
 </html>
