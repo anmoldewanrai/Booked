@@ -110,11 +110,6 @@ chrome.storage.sync.get((current) => {
   }
 });
 
-// Getting all Bookmark Folders
-chrome.bookmarks.getTree(function (bookmarks) {
-  processNode(bookmarks);
-});
-
 function processNode(bookmarks) {
   bookmarks.forEach((bookmark) => {
     // recursively process child nodes
@@ -131,6 +126,11 @@ function processNode(bookmarks) {
     }
   });
 }
+
+// Getting all Bookmark Folders
+chrome.bookmarks.getTree(function (bookmarks) {
+  processNode(bookmarks);
+});
 
 //For limiting Bookmark Load - Show More Trigger
 let j = 0;
