@@ -7,10 +7,6 @@ let search = document.getElementById("search");
 let newBtn = document.getElementById("newBtn");
 let footer = document.getElementById("footer");
 
-// let editBtn = document.getElementById('editBtn');
-// let deleteBtn = document.getElementById('deleteBtn');
-// let updateBtn = document.getElementById('updateBtn');
-
 //Empty Search Box
 window.onclick = function () {
   search.value = "";
