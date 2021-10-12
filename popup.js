@@ -11,6 +11,7 @@ let footer = document.getElementById("footer");
 window.onclick = function () {
   search.value = "";
 };
+
 // Recent Bookmarks
 function recentBookmarks() {
   folderTitle.innerText = "Recent";
@@ -39,7 +40,7 @@ function recentBookmarks() {
 function getBookmarks(ID, name) {
   folderTitle.innerText = name;
   chrome.bookmarks.getChildren(ID, (children) => {
-    if (children.length == 0) {
+    if (children.length === 0) {
       list.innerHTML = `<h3>No Bookmark(s) Added</h3>`;
       showMore.style.display = "none";
     } else {
@@ -50,6 +51,7 @@ function getBookmarks(ID, name) {
 
       //checking remaining children for show more option
       remainingChildren = children.length - n;
+      console.log(n);
 
       if (remainingChildren > 12) {
         for (let i = j; i < n; i++) {

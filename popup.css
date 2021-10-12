@@ -23,7 +23,7 @@ body {
 }
 
 .container {
-  width: 380px;
+  width: 355px;
   user-select: none;
   margin-top: 20px;
   margin-left: 6px;
@@ -31,7 +31,7 @@ body {
 }
 
 #manage {
-  margin-right: 15px;
+  margin-right: 8px;
 }
 
 #manage p {
