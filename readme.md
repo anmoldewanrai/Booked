@@ -24,7 +24,7 @@ Open to feature suggestions!
 - Ctrl + Q keyboard shortcut
 - Single click to open
 
-- **Chrome bookmark's does the exact same thing then why Linkpad?**
+- **Chrome bookmark's does the exact same thing then why Booked?**
 
   - Finding the desired Bookmark is just like finding a needle from hay. You'll eventually get it'll cost you everything.
 
