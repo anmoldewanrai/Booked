@@ -10,7 +10,7 @@ Open to feature suggestions!
 
 ## Overview
 
-<img src="img/showcase1.png" style="border-radius:8px">
+<img src="images/showcase1.png" style="border-radius:8px">
 
 ## What is BooKed ❓
 
