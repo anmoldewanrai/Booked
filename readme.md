@@ -1,8 +1,6 @@
-# BooKed ⭐
+# BooKed
 
 ### Find and Manage Bookmarks Efficiently
-
-### [Add to your chrome]
 
 ```
 Open to feature suggestions!
@@ -47,6 +45,6 @@ Open to feature suggestions!
 - [Gmail] / [Twitter] /[LinkedIn]
 
 [gmail]: mailto:anmoldewanrai@gmail.com
+[twitter]: https://twitter.com/anmolraidewan
 [linkedin]: https://www.linkedin.com/in/anmolraidewan/
-[add to your chrome]: link
 [see demo here]: link
